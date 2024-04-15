@@ -44,6 +44,31 @@ class QueryBody(BaseModel):
     query: str
 
 
+# messages = [
+#     {
+#         "user_id": "1",
+#         "conversation_id": "12",
+#         "date": "2024-01-10",
+#         "role": "user",
+#         "content": "Context: blah blah paragrafe Question: Which are the top 3 countries mentioned?",
+#     },
+#     {
+#         "user_id": "1",
+#         "conversation_id": "12",
+#         "date": "2024-01-10",
+#         "role": "assistant",
+#         "content": "The top 3 countries mentioned are Italy, Germany, Spain",
+#     },
+#     {
+#         "user_id": "1",
+#         "conversation_id": "12",
+#         "date": "2024-01-10",
+#         "role": "user",
+#         "content": "Pick the middle country only and say it",
+#     },
+# ]
+
+
 @app.post("/query")
 async def query_db(query: QueryBody):
     print("Got query", query)
