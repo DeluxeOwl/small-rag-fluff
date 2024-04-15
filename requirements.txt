@@ -1,0 +1,5 @@
+lancedb
+openai
+fastapi
+uvicorn[standard]
+tantivy
